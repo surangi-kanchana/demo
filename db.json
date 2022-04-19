@@ -192,5 +192,11 @@
         "architecture": "x86_64"
       }
     }
-  ]
+  ],
+  "schedule": 
+  {
+    "region" : "ap-southeast-1",
+    "startTime": "2018-07-03T10:09:47+02:00",
+    "stopTime": "2018-07-03T18:09:47+02:00"
+}
 }
