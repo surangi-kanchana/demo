@@ -1,14 +1,196 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "instances": [
+    {
+      "id": 1,
+      "cloudServer": "aws",
+      "name": "Instance01",
+      "type": "e2-medium",
+      "region": "us-central1-a",
+      "launchTime": "4:00:00 PM",
+      "machineType": "n1-standard-1",
+      "keyName": "n1-standard-1",
+      "availabilityZone": "n1-standard-1",
+      "creationTime": "n1-standard-1",
+      "lastStart": "2020 Oct 11, 1:16PM",
+      "lastStpo": "2020 Oct 11, 1:16PM",
+      "status": "RUNNING",
+      "start_time": "6:30:0",
+      "end_time": "7:30:10",
+      "Repeat": "Every Weekday",
+      "repeat_every": "Month",
+      "repeat_on": ["sun", "mon"],
+      "date": "Mar 30th 2022",
+      "occurance": 12
+    },
+    {
+      "id": 2,
+      "cloudServer": "azure",
+      "name": "Instance02",
+      "type": "e2-medium",
+      "region": "us-central1-a",
+      "launchTime": "4:00:00 PM",
+      "machineType": "n1-standard-1",
+      "keyName": "n1-standard-1",
+      "availabilityZone": "n1-standard-1",
+      "creationTime": "n1-standard-1",
+      "lastStart": "2020 Oct 11, 1:16PM",
+      "lastStpo": "2020 Oct 11, 1:16PM",
+      "status": "TERMINATED",
+      "start_time": "6:30:0",
+      "end_time": "7:30:10",
+      "Repeat": "Every Weekday",
+      "repeat_every": "Week",
+      "repeat_on": ["sun", "mon", "tue"],
+      "date": "Mar 30th 2022",
+      "occurance": 20
+    },
+    {
+      "id": 3,
+      "cloudServer": "gcp",
+      "name": "Instance03",
+      "type": "e2-medium",
+      "region": "us-central1-a",
+      "launchTime": "4:00:00 PM",
+      "machineType": "n1-standard-1",
+      "keyName": "n1-standard-1",
+      "availabilityZone": "n1-standard-1",
+      "creationTime": "n1-standard-1",
+      "lastStart": "2020 Oct 11, 1:16PM",
+      "lastStpo": "2020 Oct 11, 1:16PM",
+      "status": "TERMINATED",
+      "start_time": "6:30:0",
+      "end_time": "7:30:10",
+      "Repeat": "Every Weekday",
+      "repeat_every": "Month",
+      "repeat_on": [],
+      "date": "Mar 13th 2022",
+      "occurance": 5
+    },
+    {
+      "id": 4,
+      "cloudServer": "aws",
+      "name": "Instance01",
+      "type": "e2-medium",
+      "region": "us-central1-a",
+      "launchTime": "4:00:00 PM",
+      "machineType": "n1-standard-1",
+      "keyName": "n1-standard-1",
+      "availabilityZone": "n1-standard-1",
+      "creationTime": "n1-standard-1",
+      "lastStart": "2020 Oct 11, 1:16PM",
+      "lastStpo": "2020 Oct 11, 1:16PM",
+      "status": "TERMINATED",
+      "start_time": "6:30:0",
+      "end_time": "7:30:10",
+      "Repeat": "Every Weekday",
+      "repeat_every": "Week",
+      "repeat_on": [],
+      "date": "Mar 3th 2022",
+      "occurance": 7
+    },
+    {
+      "id": 5,
+      "cloudServer": "azure",
+      "name": "Instance04",
+      "type": "e2-medium",
+      "region": "us-central1-a",
+      "launchTime": "4:00:00 PM",
+      "machineType": "n1-standard-1",
+      "keyName": "n1-standard-1",
+      "availabilityZone": "n1-standard-1",
+      "creationTime": "n1-standard-1",
+      "lastStart": "2020 Oct 11, 1:16PM",
+      "lastStpo": "2020 Oct 11, 1:16PM",
+      "status": "TERMINATED",
+      "start_time": "6:30:0",
+      "end_time": "7:30:10",
+      "Repeat": "Every Weekday",
+      "repeat_every": "year",
+      "repeat_on": [],
+      "date": "Mar 20th 2022",
+      "occurance": 1
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "azure": [  
+    {    
+      "id": "crawler-rnd",    
+      "cloudProvider": "azure",    
+      "name": "crawler-rnd",    
+      "type": "Standard-E4s v3",    
+      "vpcId": "crawler-rnd-vnet",    
+      "subnetId": "default",    
+      "publicIpAddress": "null",    
+      "privateIpAddress": "10.3.0.4",    
+      "status": "TERMINATED",    
+      "launchTime": "2021-06-13T06:15:32.055Z",    
+      "placement": {      
+        "region": "centralus",      
+        "resourceGroup": "CRAWLER-RND",      
+        "availabilityZone": "ap-southeast-1a"    
+      },    
+      "schedule": {      
+        "startTime": "2018-07-03T15:39:47.000+0530",      
+        "frequency": "0 0 0 ? * MON *",      
+        "stopTime": "2018-07-03T15:39:47.000+0530"    
+      },    
+      "os": {      
+        "platform": "MicrosoftWindowsDesktop",      
+        "name": "Windows-10"    
+      }  
+    },  
+    {    
+      "id": "crawler-ix1",    
+      "cloudProvider": "azure",    
+      "name": "crawler-ix1",    
+      "type": "Standard-E4s v3",    
+      "vpcId": "CRAWLER-IX1-vnet",    
+      "subnetId": "default",    
+      "publicIpAddress": "20.97.9.2",    
+      "privateIpAddress": "10.1.0.4",    
+      "status": "PENDING",    
+      "launchTime": "2021-05-05T06:14:16.020Z",    
+      "placement": {      
+        "region": "southcentralus",      
+        "resourceGroup": "CRAWLER-IX1",      
+        "availabilityZone": "ap-southeast-1a"    
+      },    
+      "schedule": {    
+        "startTime": "2018-07-03T12:09:47+02:00",    
+        "stopTime": "2018-07-03T12:09:47+02:00",    
+        "region" : "ap-southeast-1"    
+      },    
+      "os": {      
+        "platform": "MicrosoftWindowsDesktop",      
+        "name": "Windows-10"    
+      }  
+    }
+  ], 
+  "aws": [
+    {
+      "id": "i-0b3db6cb7bebde704",
+      "cloudProvider": "aws",
+      "type": "t2.micro",   
+      "name": "crawler-ix1",   
+      "vpcId": "vpc-88a252ee",
+      "subnetId": "subnet-747cd912",
+      "publicIpAddress": "52.221.237.104",
+      "privateIpAddress": "172.31.22.75",
+      "status": "running",
+      "launchTime": "2022-03-31T06:04:08.000Z",
+      "placement": {
+        "region": "ap-southeast-1",
+        "availabilityZone": "ap-southeast-1a"
+      },
+      "schedule": {},
+      "os": {
+        "ImageId": "ami-0801a1e12f4a9ccc0",
+        "platform": "Linux/UNIX",
+        "name": "amzn2-ami-kernel-5.10-hvm-2.0.20220316.0-x86_64-gp2",
+        "description":
+          "Amazon Linux 2 Kernel 5.10 AMI 2.0.20220316.0 x86_64 HVM gp2",
+        "hypervisor": "xen",
+        "architecture": "x86_64"
+      }
+    }
+  ]
 }
